@@ -51,11 +51,11 @@
             100% { background-position: 60px 60px, 60px 90px, 90px 30px, 30px 60px; }
         }
 
-        /* Header */
+/* Header */
 header {
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
-    padding: 1.5rem 0;
+    padding: 2rem 0 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -74,8 +74,8 @@ nav {
 }
 
 .logo {
-    height: 100px;
-    filter: drop-shadow(0 0 10px rgba(255, 0, 85, 0.5));
+    height: 180px;
+    filter: drop-shadow(0 0 15px rgba(255, 0, 85, 0.6));
     transition: transform 0.3s ease;
 }
 
@@ -85,8 +85,12 @@ nav {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    flex-direction: row;
+    gap: 3rem;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
 }
 
         .nav-links a {
@@ -571,9 +575,10 @@ nav {
             }
 
             .nav-links {
-                flex-direction: column;
-                gap: 1rem;
-            }
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
 
             .product-grid {
                 grid-template-columns: 1fr;
