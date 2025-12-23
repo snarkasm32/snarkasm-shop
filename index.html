@@ -598,25 +598,26 @@ nav {
         <nav>
             <img src="snarkasm-logo.png" alt="Snarkasm Logo" class="logo">
             <div class="nav-links">
-                <a href="#products">Shop</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <div class="cart-btn" onclick="toggleCart()">
-                    🛒 Cart
-                    <span class="cart-count" id="cartCount">0</span>
-                </div>
-            </div>
+    <a href="#" onclick="filterProducts('decal'); return false;">Decals</a>
+    <a href="#" onclick="filterProducts('tee'); return false;">Tees</a>
+    <a href="#forfun">For Fun</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="cart-btn" onclick="toggleCart()">
+        🛒 Cart
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+</div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Snarkasm</h1>
-            <p>Where Empathy Ends and Sarcasm Begins</p>
-            <a href="#products" class="cta-btn">Shop Now</a>
-        </div>
-    </section>
+<section class="hero">
+    <div class="hero-content">
+        <p>Where Empathy Ends and Sarcasm Begins</p>
+        <a href="#products" class="cta-btn">Shop Now</a>
+    </div>
+</section>
 
     <!-- Filter Section -->
     <div class="filter-section">
